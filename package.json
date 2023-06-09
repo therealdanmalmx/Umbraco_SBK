@@ -1,0 +1,27 @@
+{
+  "name": "umbraco_sbk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cross-env": "NODE_ENV=production && npx tailwindcss -i ./ui/css/index.css -o ./wwwroot/dist/index.css -c ./wwwroot/tailwind.config.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "postcss-loader": "^7.3.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
