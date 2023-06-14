@@ -1,0 +1,56 @@
+@inherits UmbracoViewPage<IPlanning>;
+
+<div class="flex flex-col mx-auto w-full px-28 py-6 justify-start items-start">
+    <div class="text-center mx-auto mt-16 text-4xl font-extrabold">@Model.PlanningTitle
+        <div class="font-normal text-sm w-4/5 mx-auto mt-8">
+            @Model.PlanningText
+        </div>
+        <div class="flex justify-between items-center mt-16 ">
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <i class="fas fa-calendar-check fa-md" style="color: #ffffff;"></i>
+                </div>
+                <p class="text-xs mt-2 ">Steg 1</p>
+                <p class="font-normal text-xs">Planbesked</p>
+            </div>
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <i class="fas fa-map fa-md" style="color: #ffffff;"></i>
+                </div>
+                <p class="text-xs mt-2">Steg 2</p>
+                <p class="font-normal text-xs">Markanvisning</p>
+            </div>
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <i class="fas fa-users" style="color: #ffffff;"></i>
+                </div>
+                <p class="text-xs mt-2">Steg 3</p>
+                <p class="font-normal text-xs">Samråd för detaljplan</p>
+            </div>
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <i class="fas fa-clipboard" style="color: #ffffff;"></i>                        </div>
+                <p class="text-xs mt-2">Steg 4</p>
+                <p class="font-normal text-xs">Granskning detaljplan</p>
+            </div>
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <i class="fas fa-thumbs-up" style="color: #ffffff;"></i>
+                </div>
+                <p class="text-xs mt-2">Steg 5</p>
+                <p class="font-normal text-xs">Detaljplan antas</p>
+            </div>
+            <div>
+                <div class="flex justify-center items-center bg-sbk_green rounded-full h-28 w-28">
+                    <!-- <i class="fas fa-calendar-check fa-md" style="color: #ffffff;"></i> -->
+                    <i class="fas fa-clipboard-check fa-md" style="color: #ffffff;"></i>
+                </div>
+                <p class="text-xs mt-2">Steg 6</p>
+                <p class="font-normal text-xs">Gällande detaljplan</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-6"                                                                       >
+        <a class="text-[1rem] font-extrabold underline text-left" href="#">Läs mer här</a>
+    </div>
+</div>

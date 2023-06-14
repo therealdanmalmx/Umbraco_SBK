@@ -1,16 +1,20 @@
+@inherits UmbracoViewPage<IHeader>;
+
 <header class="flex flex-row justify-between items-center w-full">
-        <div class="bg-sbk_green h-[600px] w-2/4">
-            <div class="flex h-full justify-center items-center">
-                <div class="flex flex-col px-28 justify-between items-start">
-                    <div class="flex items-end w-full">
-                        <i class="fas fa-city fa-5x" style="color: #ffffff;"></i>
-                        <span class="w-48 text-sbk_white font-extrabold ml-4 text-3xl">Så planeras staden</span>
-                    </div>
-                    <div class="text-sbk_white mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non exercitationem vero laboriosam porro distinctio, dolorem nam? Distinctio possimus esse iure!</div>
-                    <button class="bg-sbk_white mt-6 px-8 py-2"><span class="text-sm font-extrabold">Kontakta oss</span></button>
+    <div class="bg-sbk_green h-[600px] w-2/4">
+        <div class="flex h-full justify-center items-center">
+            <div class="flex flex-col px-28 justify-between items-start">
+                <div class="flex items-end w-full">
+                    <i class="fas fa-city fa-5x" style="color: #ffffff;"></i>
+                    <span class="w-48 text-sbk_white font-extrabold ml-4 text-3xl">@Model.HeaderTitle</span>
                 </div>
+                <div class="text-sbk_white mt-6">@Model.HeaderSubText</div>
+                <button class="bg-sbk_white mt-6 px-8 py-2"><span class="text-sm font-extrabold">@Model.HeaderButtonText</span></button>
             </div>
         </div>
-        <img class="h-[600px] w-2/4 object-cover" src="/img/gothenburg.jpg" alt="Göteborg stad">
-
+    </div>
+    @if (Model.HeaderImage != null)
+    {
+        <img class="h-[600px] w-2/4 object-cover" src="@Model.HeaderImage.Url()" alt="Göteborg stad">
+    }
 </header>

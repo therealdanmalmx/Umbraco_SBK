@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel
+	public partial class Home : PublishedContentModel, IHeader, IPlanning, ISearchPlan, IWarnings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -48,5 +48,141 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		}
 
 		// properties
+
+		///<summary>
+		/// Circle Heading
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("circleHeading")]
+		public virtual string CircleHeading => this.Value<string>(_publishedValueFallback, "circleHeading");
+
+		///<summary>
+		/// Circle Icon
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("circleIcon")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops CircleIcon => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "circleIcon");
+
+		///<summary>
+		/// Circle Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("circleText")]
+		public virtual string CircleText => this.Value<string>(_publishedValueFallback, "circleText");
+
+		///<summary>
+		/// Header Button Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("headerButtonText")]
+		public virtual string HeaderButtonText => global::Umbraco.Cms.Web.Common.PublishedModels.Header.GetHeaderButtonText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Header Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("headerImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderImage => global::Umbraco.Cms.Web.Common.PublishedModels.Header.GetHeaderImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Header Sub Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("headerSubText")]
+		public virtual string HeaderSubText => global::Umbraco.Cms.Web.Common.PublishedModels.Header.GetHeaderSubText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Header Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("headerTitle")]
+		public virtual string HeaderTitle => global::Umbraco.Cms.Web.Common.PublishedModels.Header.GetHeaderTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Planning Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("planningText")]
+		public virtual string PlanningText => global::Umbraco.Cms.Web.Common.PublishedModels.Planning.GetPlanningText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Planning Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("planningTitle")]
+		public virtual string PlanningTitle => global::Umbraco.Cms.Web.Common.PublishedModels.Planning.GetPlanningTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Search Plan Button Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchPlanButtonText")]
+		public virtual string SearchPlanButtonText => global::Umbraco.Cms.Web.Common.PublishedModels.SearchPlan.GetSearchPlanButtonText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Search Plan Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchPlanImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SearchPlanImage => global::Umbraco.Cms.Web.Common.PublishedModels.SearchPlan.GetSearchPlanImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Search Plan Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("searchPlanText")]
+		public virtual string SearchPlanText => global::Umbraco.Cms.Web.Common.PublishedModels.SearchPlan.GetSearchPlanText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Warnings Date
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("warningsDate")]
+		public virtual string WarningsDate => global::Umbraco.Cms.Web.Common.PublishedModels.Warnings.GetWarningsDate(this, _publishedValueFallback);
+
+		///<summary>
+		/// Warnings Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("warningsImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops WarningsImage => global::Umbraco.Cms.Web.Common.PublishedModels.Warnings.GetWarningsImage(this, _publishedValueFallback);
+
+		///<summary>
+		/// Warnings Link Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("warningsLinkText")]
+		public virtual string WarningsLinkText => global::Umbraco.Cms.Web.Common.PublishedModels.Warnings.GetWarningsLinkText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Warnings Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("warningsText")]
+		public virtual string WarningsText => global::Umbraco.Cms.Web.Common.PublishedModels.Warnings.GetWarningsText(this, _publishedValueFallback);
+
+		///<summary>
+		/// Warnings Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "11.4.0+e52e987")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("warningsTitle")]
+		public virtual string WarningsTitle => global::Umbraco.Cms.Web.Common.PublishedModels.Warnings.GetWarningsTitle(this, _publishedValueFallback);
 	}
 }

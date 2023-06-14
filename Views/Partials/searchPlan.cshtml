@@ -1,0 +1,13 @@
+@inherits UmbracoViewPage<ISearchPlan>;
+
+<div class="flex justify-center w-full items-center mt-20 bg-sbk_green">
+    @if (Model.SearchPlanImage != null) {
+        <img class="w-2/4 h-96 object-cover" src="@Model.SearchPlanImage.Url()" alt="Karta av Göteborg">
+    }
+    <div class="flex justify-center items-center mx-auto bg-sbk_green w-2/4 h-96">
+        <div class="flex flex-col items-start justify-between w-3/6 mx-auto">
+            <div class="text-3xl text-white tracking-wide font-bold">@Model.SearchPlanText</div>
+            <button class="mt-6 px-8 py-3 bg-slate-800 text-sbk_white font-bold text-sm ">@Model.SearchPlanButtonText</button>
+        </div>
+    </div>
+</div>
